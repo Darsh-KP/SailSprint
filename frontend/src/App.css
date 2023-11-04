@@ -1,3 +1,9 @@
 h1 {
     text-align: center;
 }
+body{
+    background-color: #FEF9EF;
+}
+body::-webkit-scrollbar{
+    display: none;
+}

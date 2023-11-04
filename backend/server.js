@@ -2,6 +2,20 @@ express = require('express')
 app = express()
 const PORT = 3000;
 const path = require('path')
+const cors = require("cors")
+const cookieParser = require("cookie-parser")
+const verifyUser = require("./auth")
+
+app.use(
+	cors({
+		origin: process.env.CLIENT_URL,
+		credentials: true,
+	})
+)
+
+app.use(express.json())
+app.use(cookieParser())
+
 const db = require('./db');
 const bodyParser = require('body-parser')
 
