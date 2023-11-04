@@ -1,11 +1,18 @@
 import { useState } from "react"
+import './App.css';
+import logo from "./logo1.png"
+
+import { BrowserRouter as router, Routes, Route } from 'react-router-dom'
+import Navbar from "./components/navbar"
 
 function App() {
-	const [count, setCount] = useState(0)
-
 	return (
 		<>
-			<p>hello</p>
+			<div><Navbar /></div>
+			<body>
+  				<h1>SailSprint</h1>
+				<img src={logo}/>
+			</body>
 		</>
 	)
 }
