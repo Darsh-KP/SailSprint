@@ -1,15 +1,23 @@
 h1 {
     text-align: center;
 }
-<<<<<<< HEAD
-body::-webkit-scrollbar{
-    display: none;
-  }
-=======
+
 body{
+    margin: 0;
+    padding: 0;
+    margin-top: 9vh;
     background-color: #FEF9EF;
 }
+
 body::-webkit-scrollbar{
     display: none;
 }
->>>>>>> 41fd59f615d109e62de699257619e86f10c3d00f
+
+.home-boat {
+    position: fixed;
+    bottom: -2vh;
+    right: -5vw;
+    width: 30vw;
+    height: 67vh;
+    object-fit: contain;
+}
