@@ -131,6 +131,57 @@ app.post(EVENTS_ENDPOINT, (req, res) => {
 })
 
 
+//POST request to join the event as viewer
+
+app.post(VIEWERS_ENDPOINT, (req, res) => {
+    const event_id = req.body.event_id;
+    const user_id = req.body.user_id
+
+
+    const sqlQuery = 'INSERT INTO viewers VALUES (? , ?)';
+
+    db.pool.query(sqlQuery, [user_id, event_id], (error, result) => {
+        if(error){
+            res.send(500).send({message: "something went wrong", errM: error});
+        }
+        res.status(200).send(result);
+    })
+})
+
+//POST request to join the event as racer
+app.post(RACERS_ENDPOINT, (req, res) => {
+    const event_id = req.body.event_id;
+    const user_id = req.body.user_id
+
+
+    const sqlQuery = 'INSERT INTO racers VALUES (? , ?)';
+
+    db.pool.query(sqlQuery, [event_id, user_id], (error, result) => {
+        if(error){
+            res.send(500).send({message: "something went wrong", errM: error});
+        }
+        res.status(200).send(result);
+    })
+})
+
+
+//POST request to create a user
+
+app.post(USERS_ENDPOINT, (req, res) => {
+    const user_id = req.body.user_id;
+    const username = req.body.username;
+
+    const sqlQuery = 'INSERT INTO users VALUES (? , ?)';
+
+    db.pool.query(sqlQuery, [user_id, username], (error, result) => {
+        if(error){
+            res.send(500).send({message: "something went wrong", errM: error});
+        }
+        res.status(200).send(result);
+    })
+})
+
+
 
 
 
