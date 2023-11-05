@@ -134,7 +134,7 @@ app.post(EVENTS_ENDPOINT, (req, res) => {
 
 //POST request to join the event as viewer
 
-app.post(VIEWERS_ENDPOINT, (req, res) => {
+app.post(`${VIEWERS_ENDPOINT}/join`, (req, res) => {
     const event_id = req.body.event_id;
     const user_id = req.body.user_id
 
@@ -150,7 +150,7 @@ app.post(VIEWERS_ENDPOINT, (req, res) => {
 })
 
 //POST request to join the event as racer
-app.post(RACERS_ENDPOINT, (req, res) => {
+app.post(`${RACERS_ENDPOINT}/join`, (req, res) => {
     const event_id = req.body.event_id;
     const user_id = req.body.user_id
 
