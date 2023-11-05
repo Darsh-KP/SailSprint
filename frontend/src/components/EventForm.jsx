@@ -30,7 +30,7 @@ export default function EventForm() {
 					<Field name="address" placeholder="Location" />
 					<Field name="date_time" placeholder="YYYY-MM-DD HH:MM (24 hour)" />
 					<Field name="price" placeholder="0" />
-					<button>Submit</button>
+					<button type="submit">Submit</button>
 				</Form>
 			</Formik>
 		</div>
