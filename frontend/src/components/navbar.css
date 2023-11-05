@@ -59,3 +59,8 @@ nav {
     position:absolute;
 }
 
+.user-dropdown {
+  height: 9vh;
+  position: absolute;
+  right:300px;
+}
