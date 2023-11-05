@@ -5,6 +5,7 @@ import { useUser } from "@clerk/clerk-react"
 import dateIcon from "../assets/DateIcon.png"
 import mapIcon from "../assets/MapIcon.png"
 import priceIcon from "../assets/PriceIcon.png"
+import { SignedIn, SignInButton, SignedOut, SignUpButton } from "@clerk/clerk-react"
 
 export default function Card({ event }) {
 	const { user } = useUser()
