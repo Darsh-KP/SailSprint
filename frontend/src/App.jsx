@@ -11,6 +11,7 @@ import cloudsRight from "./assets/CloudsRight.png"
 
 import { SignInButton } from "@clerk/clerk-react";
 import Cards from "./components/Cards";
+import EventForm from "./components/EventForm";
 
 function App() {
 	return (
