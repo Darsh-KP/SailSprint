@@ -117,11 +117,12 @@ app.post(EVENTS_ENDPOINT, (req, res) => {
     const date_time = req.body.date_time
     const price = req.body.price
     const host_id = req.body.host_id
+    const address = req.body.address
 
 
-    const sqlQuery = `INSERT INTO events (event_name, date_time, price, host_id) VALUES (?, ? , ? , ?)`;
+    const sqlQuery = `INSERT INTO events (event_name, date_time, price, host_id) VALUES (?, ? , ? , ?, ?)`;
 
-    db.pool.query(sqlQuery,[event_name, date_time, price, host_id], (err, result) => {
+    db.pool.query(sqlQuery,[event_name, date_time, price, host_id, address], (err, result) => {
         if(err){
             res.status(500).send({message: "something went wrong", errM: err});
         }
