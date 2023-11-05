@@ -1,7 +1,22 @@
 nav {
+<<<<<<< HEAD
     background-color: aliceblue;
     height:100%;
 }
 .navbar-logo {
     height: 70px;
 }
+=======
+    width: 100%;
+    height: 8vh;
+    background-color: #FE6D73;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+}
+
+.navbar-container {
+    padding: 0.1em;
+    height: 0.9em;
+}
+>>>>>>> 41fd59f615d109e62de699257619e86f10c3d00f

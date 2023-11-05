@@ -1,6 +1,15 @@
 h1 {
     text-align: center;
 }
+<<<<<<< HEAD
 body::-webkit-scrollbar{
     display: none;
   }
+=======
+body{
+    background-color: #FEF9EF;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+>>>>>>> 41fd59f615d109e62de699257619e86f10c3d00f
