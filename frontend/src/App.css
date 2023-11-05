@@ -25,6 +25,8 @@ body::-webkit-scrollbar{
     height: 50vh;
     object-fit: contain;
     object-position: right bottom;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
 }
 
 .home-beach {
@@ -35,6 +37,8 @@ body::-webkit-scrollbar{
     height: 50vh;
     object-fit: contain;
     object-position: left bottom;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
 }
 
 .home-clouds-right {
@@ -46,6 +50,8 @@ body::-webkit-scrollbar{
     height: 38vh;
     object-fit: contain;
     object-position: right top;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
 }
 
 
@@ -58,4 +64,6 @@ body::-webkit-scrollbar{
     height: 36vh;
     object-fit: contain;
     object-position: left top;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
 }

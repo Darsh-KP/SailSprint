@@ -11,6 +11,8 @@ nav {
 .navbar-logo {
     height: 9vh;
     position: absolute;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
 }
 
 .login-button {
