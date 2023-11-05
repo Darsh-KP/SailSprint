@@ -5,10 +5,54 @@ nav {
     top: 0px;
     left: 0px;
     position: fixed;
-    z-index: 1000;
 }
 
 .navbar-logo {
     height: 9vh;
     position: absolute;
 }
+
+.login-button {
+    background: #f0ce5d;
+  border-radius: 999px;
+  box-shadow: #f0ce5d 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+    right:130px;
+    top:20px;
+    position: absolute
+}
+
+.signup-button {
+    background: #f0ce5d;
+  border-radius: 999px;
+  box-shadow: #f0ce5d 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+    right:30px;
+    top:20px;
+    position:absolute;
+}
+
