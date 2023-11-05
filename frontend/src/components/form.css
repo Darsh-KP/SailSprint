@@ -1,0 +1,25 @@
+.form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.submitButton {
+	background: #ffcb77;
+	border-radius: 999px;
+	box-shadow: #ffcb77 0 10px 20px -10px;
+	box-sizing: border-box;
+	color: #ffffff;
+	cursor: pointer;
+	line-height: 24px;
+	opacity: 1;
+	outline: 0 solid transparent;
+	padding: 8px 18px;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	width: fit-content;
+	word-break: break-word;
+	border: 0;
+}

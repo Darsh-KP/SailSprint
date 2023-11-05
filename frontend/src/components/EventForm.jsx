@@ -1,6 +1,7 @@
 import { Formik, Form, Field } from "formik"
 import api from "../helpers/axios"
 import { useUser } from "@clerk/clerk-react"
+import "./form.css"
 
 export default function EventForm() {
 	const { user } = useUser()
@@ -15,7 +16,7 @@ export default function EventForm() {
 	}
 
 	return (
-		<div>
+		<div className="form">
 			<Formik
 				initialValues={{
 					event_name: "",
@@ -30,7 +31,7 @@ export default function EventForm() {
 					<Field name="address" placeholder="Location" />
 					<Field name="date_time" placeholder="YYYY-MM-DD HH:MM (24 hour)" />
 					<Field name="price" placeholder="0" />
-					<button type="submit">Submit</button>
+					<button className="submitButton" type="submit">Submit</button>
 				</Form>
 			</Formik>
 		</div>
