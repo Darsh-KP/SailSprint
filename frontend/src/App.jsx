@@ -25,6 +25,7 @@ function App() {
 					<img src={cloudsRight} className="home-clouds-right" />
 				</div>
                 <Cards />
+                <EventForm />
 			</body>
 		</>
 	)
