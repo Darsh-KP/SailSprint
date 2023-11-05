@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import logo from "../assets/IconHorizontal.png"
 import { SignInButton } from "@clerk/clerk-react"
-
+import { SignUpButton } from "@clerk/clerk-react";
 import "./navbar.css"
 function Navbar() {
     return (
@@ -12,9 +12,13 @@ function Navbar() {
                     <Link to="/">
                         <img src={logo} className='navbar-logo' />
                     </Link>
-                    <Link to="/">
-                        Clerk App
-                    </Link>
+                    
+                </div>
+                <div className='login-button'>
+                    <SignInButton />
+                </div>
+                <div className='signup-button'>
+                    <SignUpButton />
                 </div>
             </nav>
         </>
