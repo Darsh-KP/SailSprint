@@ -23,7 +23,6 @@ function App() {
 					<img src={cloudsLeft} className="home-clouds-left" />
 					<img src={cloudsRight} className="home-clouds-right" />
 				</div>
-				<h1>hello</h1>
                 <Cards />
 			</body>
 		</>

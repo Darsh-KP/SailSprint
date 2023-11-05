@@ -32,6 +32,30 @@ export default function Cards() {
             // }
             const mockEvents = [
                 {
+                    event_name: "Test event",
+                    hostname: "Test host",
+                    date_time: "12:00pm Sunday",
+                    price: "$2.00"
+                },
+                {
+                    event_name: "test event",
+                    hostname: "test host",
+                    date_time: "12:00pm Sunday",
+                    price: "$2.00"
+                },
+                {
+                    event_name: "test event",
+                    hostname: "test host",
+                    date_time: "12:00pm Sunday",
+                    price: "$2.00"
+                },
+                {
+                    event_name: "test event",
+                    hostname: "test host",
+                    date_time: "12:00pm Sunday",
+                    price: "$2.00"
+                },
+                {
                     event_name: "test event",
                     hostname: "test host",
                     date_time: "12:00pm Sunday",
@@ -47,7 +71,7 @@ export default function Cards() {
 	}, [])
 
 	return (
-		<div>
+		<div className="cards">
 			{events.length > 0 ? (
 				events.map((event) => (
 					<Card key={event.event_id} event={event} />
