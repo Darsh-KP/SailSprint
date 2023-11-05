@@ -24,6 +24,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 const USERS_ENDPOINT = '/users';
 const EVENTS_ENDPOINT = '/events';
+const VIEWERS_ENDPOINT = '/viewers';
+const RACERS_ENDPOINT = '/racers';
 
 //app.use(express.static('../frontend/dist'))
 
@@ -58,6 +60,58 @@ app.get(EVENTS_ENDPOINT, (req, res) => {
     })
 })
 
+//GET get total viewers in event
+app.get(VIEWERS_ENDPOINT, (req, res) => {
+
+    const event_id = req.query.event_id;
+
+    const sqlQuery = 'SELECT COUNT(*) FROM viewers WHERE event_id = ?';
+
+    db.pool.query(sqlQuery, [event_id], (err, result) => {
+        //handle the error
+        if(err){
+            res.status(500).send({message : "something went wrong"});
+        }
+        console.log(result);
+        res.status(200).send(result);
+    })
+})
+
+//GET get total racers in event
+app.get(RACERS_ENDPOINT, (req, res) => {
+
+    const event_id = req.query.event_id;
+
+    const sqlQuery = 'SELECT COUNT(*) FROM racers WHERE event_id = ?';
+
+    db.pool.query(sqlQuery, [event_id], (err, result) => {
+        //handle the error
+        if(err){
+            res.status(500).send({message : "something went wrong"});
+        }
+        console.log(result);
+        res.status(200).send(result);
+    })
+})
+
+//GET get event's hostname
+app.get(EVENTS_ENDPOINT, (req, res) => {
+
+    const event_id = req.query.event_id;
+
+    const sqlQuery = 'SELECT hostname FROM racers WHERE event_id = ?';
+
+    db.pool.query(sqlQuery, [event_id], (err, result) => {
+        //handle the error
+        if(err){
+            res.status(500).send({message : "something went wrong"});
+        }
+        console.log(result);
+        res.status(200).send(result);
+    })
+})
+
+//POST create an event
 app.post(EVENTS_ENDPOINT, (req, res) => {
     const event_name = req.body.event_name
     const date_time = req.body.date_time

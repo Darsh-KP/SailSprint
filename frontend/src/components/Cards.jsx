@@ -12,9 +12,9 @@ export default function Cards() {
             //     let allEventsWithCount = []
     
             //     for (const event of allEvents) {
-            //         const viewerCount = await api.get(`/viewers/${event.event_id}`)
-            //         const racerCount = await api.get(`/racers/${event.event_id})`)
-            //         const hostname = await api.get(`/users/getUsername/${event.host_id}`)
+            //         const viewerCount = await api.get(`/viewers?event_id=${event.event_id}`)
+            //         const racerCount = await api.get(`/racers?event_id=${event.event_id})`)
+            //         const hostname = await api.get(`/events?event_id=${event.host_id}`)
     
             //         const eventWithCounts = {
             //             ...event,
