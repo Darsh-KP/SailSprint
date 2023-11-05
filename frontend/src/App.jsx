@@ -11,6 +11,7 @@ import cloudsRight from "./assets/CloudsRight.png"
 
 import { SignInButton } from "@clerk/clerk-react";
 import Cards from "./components/Cards";
+import EventForm from "./components/EventForm";
 
 function App() {
 	return (
@@ -23,7 +24,6 @@ function App() {
 					<img src={cloudsLeft} className="home-clouds-left" />
 					<img src={cloudsRight} className="home-clouds-right" />
 				</div>
-				<h1>hello</h1>
                 <Cards />
 			</body>
 		</>

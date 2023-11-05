@@ -24,7 +24,7 @@ export default function Card({ event }) {
 	}
 
 	return (
-		<div>
+		<div className="card">
 			<h1>{event.event_name}</h1>
 			<p>{event.hostname}</p>
 			<p>Location</p>
