@@ -1,6 +1,6 @@
 import api from "../helpers/axios"
 import { useUser } from "@clerk/clerk-react"
-
+import "./card.css"
 // Import images
 import dateIcon from "../assets/DateIcon.png"
 import mapIcon from "../assets/MapIcon.png"
