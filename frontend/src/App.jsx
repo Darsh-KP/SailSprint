@@ -26,7 +26,6 @@ function App() {
 				</div>
 				<h1>hello</h1>
                 <Cards />
-                <EventForm />
 			</body>
 		</>
 	)
