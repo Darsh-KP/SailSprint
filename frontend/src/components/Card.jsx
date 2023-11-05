@@ -49,8 +49,22 @@ export default function Card({ event }) {
 				<img src={priceIcon} className="tinyIcon" />
 				{event.price}
 			</p>
+			<SignedIn>
 			<button onClick={joinAsRacer}>Join as Racer</button>
 			<button onClick={joinAsViewer}>Join as Viewer</button>
+			</SignedIn>
+			<SignedOut>
+			<div>
+            	<SignInButton className="joinracer-button">
+					<button>Join as Racer</button>
+				</SignInButton>
+            </div>
+            <div>
+				<SignUpButton className="joinviewer-button">
+					<button>Join as Viewer</button>
+				</SignUpButton>
+            </div>
+			</SignedOut>
 		</div>
 	)
 }
