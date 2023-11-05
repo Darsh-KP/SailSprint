@@ -4,6 +4,8 @@ import logo from "../assets/IconHorizontal.png"
 import { SignInButton } from "@clerk/clerk-react"
 import { SignUpButton } from "@clerk/clerk-react";
 import { SignOutButton } from "@clerk/clerk-react";
+import { SignedIn } from '@clerk/clerk-react';
+import { SignedOut } from '@clerk/clerk-react';
 import usericon from "../assets/userprofile.png"
 import "./navbar.css"
 function Navbar() {
@@ -16,16 +18,19 @@ function Navbar() {
                     </Link>
                     
                 </div>
-                <div className='profile-dropdown'>
-                    <img src={usericon} className='user-dropdown' />
-                </div>
-                
+                <SignedOut>
                 <div className='login'>
                     <SignInButton className="login-button"/>
                 </div>
                 <div className='signup'>
                     <SignUpButton className="signup-button"/>
                 </div>
+                </SignedOut>
+                <SignedIn>
+                <div className='signout'>
+                    <SignOutButton className="signout-button"/>
+                </div>
+                </SignedIn>
             </nav>
         </>
     )
