@@ -15,7 +15,7 @@ export default function EventForm() {
 	}
 
 	return (
-		<div className="z-10">
+		<div>
 			<Formik
 				initialValues={{
 					event_name: "",
