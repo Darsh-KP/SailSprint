@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import logo from "../assets/IconHorizontal.png"
-import { SignInButton } from "@clerk/clerk-react";
+import { SignInButton } from "@clerk/clerk-react"
 
 import "./navbar.css"
 function Navbar() {
