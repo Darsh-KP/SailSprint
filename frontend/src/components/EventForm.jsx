@@ -7,7 +7,8 @@ export default function EventForm() {
 
 	const handleSubmit = async (values) => {
 		try {
-			await api.post("/events/create", { ...values, userId: user.id })
+            console.log({...values, userId: user.id})
+			await api.post("/events", { ...values, host_id: user.id })
 		} catch (err) {
 			console.error(err)
 		}
@@ -17,18 +18,18 @@ export default function EventForm() {
 		<div>
 			<Formik
 				initialValues={{
-					eventName: "",
-					location: "",
-					date: "",
-					time: "",
+					event_name: "",
+					address: "",
+					date_time: "",
+                    price: 0,
 				}}
 				onSubmit={(values) => handleSubmit(values)}
 			>
 				<Form>
-					<Field name="eventName" placeholder="My Event" />
-					<Field name="location" placeholder="Location" />
-					<Field name="date" placeholder="YYYY-MM-DD" />
-					<Field name="time" placeholder="HH:MM (24 hour)" />
+					<Field name="event_name" placeholder="My Event" />
+					<Field name="address" placeholder="Location" />
+					<Field name="date_time" placeholder="YYYY-MM-DD HH:MM (24 hour)" />
+					<Field name="price" placeholder="0" />
 					<button>Submit</button>
 				</Form>
 			</Formik>

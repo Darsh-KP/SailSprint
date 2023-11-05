@@ -32,30 +32,35 @@ export default function Cards() {
             // }
             const mockEvents = [
                 {
+                    event_id: 1,
                     event_name: "Test event",
                     hostname: "Test host",
                     date_time: "12:00pm Sunday",
                     price: "$2.00"
                 },
                 {
+                    event_id: 2,
                     event_name: "test event",
                     hostname: "test host",
                     date_time: "12:00pm Sunday",
                     price: "$2.00"
                 },
                 {
+                    event_id: 3,
                     event_name: "test event",
                     hostname: "test host",
                     date_time: "12:00pm Sunday",
                     price: "$2.00"
                 },
                 {
+                    event_id: 4,
                     event_name: "test event",
                     hostname: "test host",
                     date_time: "12:00pm Sunday",
                     price: "$2.00"
                 },
                 {
+                    event_id: 5,
                     event_name: "test event",
                     hostname: "test host",
                     date_time: "12:00pm Sunday",
