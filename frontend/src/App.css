@@ -12,10 +12,6 @@ body::-webkit-scrollbar{
     display: none;
 }
 
-.overlay {
-    z-index: 1;
-}
-
 .home-boat {
     position: fixed;
     bottom: -2vmin;
@@ -68,6 +64,7 @@ body::-webkit-scrollbar{
 }
 
 .cards {
+    z-index: 7;
     margin-top: 6vi;
     margin-bottom: 2vi;
     margin-left: auto;
@@ -77,6 +74,7 @@ body::-webkit-scrollbar{
     align-items: center;
     flex-direction: column;
     row-gap: 5vb;
+    scroll-behavior: smooth;
 }
 
 .card h1 {
