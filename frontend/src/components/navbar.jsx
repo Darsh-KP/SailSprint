@@ -20,10 +20,14 @@ function Navbar() {
                 </div>
                 <SignedOut>
                 <div className='login'>
-                    <SignInButton className="login-button"/>
+                    <SignInButton className="login-button">
+                    <button>Sign In</button>
+                    </SignInButton>
                 </div>
                 <div className='signup'>
-                    <SignUpButton className="signup-button"/>
+                    <SignUpButton className="signup-button">
+                        <button>Sign Up</button>
+                    </SignUpButton>
                 </div>
                 </SignedOut>
                 <SignedIn>

@@ -16,47 +16,53 @@ nav {
 }
 
 .login-button {
-    background: #FFCB77;
+  background: #FFCB77;
   border-radius: 999px;
   box-shadow: #FFCB77 0 10px 20px -10px;
   box-sizing: border-box;
   color: #FFFFFF;
   cursor: pointer;
-  line-height: 24px;
   opacity: 1;
   outline: 0 solid transparent;
   padding: 8px 18px;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: fit-content;
   word-break: break-word;
   border: 0;
-    right:130px;
-    top:20px;
-    position: absolute
+  position: absolute;
+  font-size: 2.1vh;
+  height:6vh;
+  margin-top:1.5vh;
+  right:9vw;
+  top:0;
+  padding-left:2vw;
+  padding-right:2vw;
 }
 
 .signup-button {
-    background: #FFCB77;
+  background: #FFCB77;
   border-radius: 999px;
   box-shadow: #FFCB77 0 10px 20px -10px;
   box-sizing: border-box;
   color: #FFFFFF;
   cursor: pointer;
-  line-height: 24px;
   opacity: 1;
   outline: 0 solid transparent;
   padding: 8px 18px;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: fit-content;
   word-break: break-word;
   border: 0;
-    right:30px;
-    top:20px;
-    position:absolute;
+  position: absolute;
+  font-size: 2vh;
+  height:6vh;
+  margin-top:1.5vh;
+  right:0.5vw;
+  top:0;
+  padding-left:2vw;
+  padding-right:2vw;
 }
 
 .user-dropdown {
