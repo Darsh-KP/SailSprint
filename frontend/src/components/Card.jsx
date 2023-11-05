@@ -12,7 +12,7 @@ export default function Card({ event }) {
 
 	const joinAsViewer = async () => {
 		try {
-			await api.post("/join/viewer", {
+			await api.post("/viewers/join", {
 				userId: user.id,
 				username: user.username,
 				event: event.event_id,
@@ -24,7 +24,7 @@ export default function Card({ event }) {
 
 	const joinAsRacer = async () => {
 		try {
-			await api.post("/join/racer", {
+			await api.post("/viewers/join", {
 				userId: user.id,
 				username: user.username,
 				event: event.event_id,
