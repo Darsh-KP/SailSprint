@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import logo from "../assets/IconHorizontal.png"
 import { SignInButton } from "@clerk/clerk-react"
 import { SignUpButton } from "@clerk/clerk-react";
+import { SignOutButton } from "@clerk/clerk-react";
+import usericon from "../assets/userprofile.png"
 import "./navbar.css"
 function Navbar() {
     return (
@@ -14,11 +16,15 @@ function Navbar() {
                     </Link>
                     
                 </div>
-                <div className='login-button'>
-                    <SignInButton />
+                <div className='profile-dropdown'>
+                    <img src={usericon} className='user-dropdown' />
                 </div>
-                <div className='signup-button'>
-                    <SignUpButton />
+                
+                <div className='login'>
+                    <SignInButton className="login-button"/>
+                </div>
+                <div className='signup'>
+                    <SignUpButton className="signup-button"/>
                 </div>
             </nav>
         </>
