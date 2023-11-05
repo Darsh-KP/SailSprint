@@ -1,10 +1,13 @@
 import { Formik, Form, Field } from "formik"
 import api from "../helpers/axios"
+import { useUser } from "@clerk/clerk-react"
 
 export default function EventForm() {
+	const { user } = useUser()
+
 	const handleSubmit = async (values) => {
 		try {
-			await api.post("/events/create", { values })
+			await api.post("/events/create", { ...values, userId: user.id })
 		} catch (err) {
 			console.error(err)
 		}
