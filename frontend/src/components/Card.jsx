@@ -1,6 +1,11 @@
 import api from "../helpers/axios"
 import { useUser } from "@clerk/clerk-react"
 
+// Import images
+import dateIcon from "../assets/DateIcon.png"
+import mapIcon from "../assets/MapIcon.png"
+import priceIcon from "../assets/PriceIcon.png"
+
 export default function Card({ event }) {
     const { user } = useUser()
 
@@ -33,10 +38,10 @@ export default function Card({ event }) {
 	return (
 		<div className="card">
 			<h1>{event.event_name}</h1>
-			<p>{event.hostname}</p>
-			<p>Location</p>
-			<p>{event.date_time}</p>
-			<p>{event.price}</p>
+			<p className="host">{event.hostname}</p>
+			<p><img src={mapIcon} className="tinyIcon"/>Location</p>
+			<p><img src={dateIcon} className="tinyIcon" />{event.date_time}</p>
+			<p><img src={priceIcon} className="tinyIcon" />{event.price}</p>
 			<button onClick={joinAsRacer}>Join as Racer</button>
 			<button onClick={joinAsViewer}>Join as Viewer</button>
 		</div>

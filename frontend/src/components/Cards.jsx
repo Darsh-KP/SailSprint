@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import api from "../helpers/axios"
 import Card from "./card"
+import { Link } from "react-router-dom"
 
 export default function Cards() {
 	const [events, setEvents] = useState([])

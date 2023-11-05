@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:700&display=swap');
+
+
 body{
     margin: 0;
     padding: 0;
@@ -76,20 +79,23 @@ body::-webkit-scrollbar{
     row-gap: 5vb;
 }
 
-@font-face {
-    font-family: "Sofia";
-    src: url(https://fonts.googleapis.com/css?family=Sofia);
-}
-
 .card h1 {
-    margin-top: 0;
+    margin-top: -0.3em;
     font-size: 2em;
-    font-family: "Sofia";
+    font-family:'Poppins', sans-serif;
+    margin-bottom: 1vb;
 }
 
 .card p {
+    font-family:'Poppins', sans-serif;
     margin-top: 0;
     top: 0;
+    line-height: 1vb;
+    color: white;
+}
+
+.card .host {
+    color: #747474;
 }
 
 .card {
@@ -97,4 +103,12 @@ body::-webkit-scrollbar{
     border-radius: 20px;
     width: 100%;
     padding: 5%;
+}
+
+.card .tinyIcon {
+    height: 2.5vb;
+    margin-right: 1vb;
+    object-fit: contain;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
 }
