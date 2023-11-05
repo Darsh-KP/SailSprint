@@ -10,6 +10,7 @@ import cloudsLeft from "./assets/CloudsLeft.png"
 import cloudsRight from "./assets/CloudsRight.png"
 
 import { SignInButton } from "@clerk/clerk-react";
+import Cards from "./components/Cards";
 
 function App() {
 	return (
@@ -23,6 +24,7 @@ function App() {
 					<img src={cloudsRight} className="home-clouds-right" />
 				</div>
 				<h1>hello</h1>
+                <Cards />
 			</body>
 		</>
 	)
