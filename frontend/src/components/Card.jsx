@@ -1,24 +1,26 @@
 import api from "../helpers/axios"
 
 export default function Card({ event }) {
-	const joinAsViewer = async () => {
-		try {
-			await api.post("/join/viewer", {
-				event: event.event_id,
-			})
-		} catch (err) {
-			console.error(err)
-		}
+	const joinAsViewer = () => {
+		// try {
+		// 	await api.post("/join/viewer", {
+		// 		event: event.event_id,
+		// 	})
+		// } catch (err) {
+		// 	console.error(err)
+		// }
+        console.log("testing viewer")
 	}
 
-	const joinAsRacer = async () => {
-		try {
-			await api.post("/join/racer", {
-				event: event.event_id,
-			})
-		} catch (err) {
-			console.error(err)
-		}
+	const joinAsRacer = () => {
+		// try {
+		// 	await api.post("/join/racer", {
+		// 		event: event.event_id,
+		// 	})
+		// } catch (err) {
+		// 	console.error(err)
+		// }
+        console.log("testing racer")
 	}
 
 	return (
