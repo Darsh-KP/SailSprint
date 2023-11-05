@@ -27,7 +27,7 @@ const EVENTS_ENDPOINT = '/events';
 const VIEWERS_ENDPOINT = '/viewers';
 const RACERS_ENDPOINT = '/racers';
 
-//app.use(express.static('../frontend/dist'))
+app.use(express.static('../frontend/dist'))
 
 //GET ALL THE EVENTS
 app.get(EVENTS_ENDPOINT, (req, res) => {
@@ -199,9 +199,9 @@ app.get(USERS_ENDPOINT, async (req, res) => {
         
     }
 })
-//app.get('*', (req, res) => {
-//    res.sendFile(path.resolve('..', __dirname, 'frontend', 'dist', 'index.html'));
-//})
+app.get('/', (req, res) => {
+    res.sendFile(path.resolve('..', __dirname, 'frontend', 'dist', 'index.html'));
+})
 
 function convertBigIntsToNumbers(obj) {
     for (const key in obj) {
